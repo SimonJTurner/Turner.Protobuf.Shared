@@ -1,0 +1,11 @@
+syntax = "proto3";
+package pio;
+option csharp_namespace = "Turner.Dtos.Protobuf.Purchasing";
+option go_package = "github.com/sjturner/protocolbuffers/protobuf/examples/go/purchasing";
+
+// Describes an event where a purchase was made
+message PurchaseEvent {
+  int64 timestamp = 2;
+  string item_purchased = 3;
+  float price = 4;
+}
